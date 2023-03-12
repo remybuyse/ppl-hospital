@@ -1,0 +1,10 @@
+<div *ngIf="drugs && drugs.length">
+    <span *ngFor="let drug of drugs; last as isLast">
+        <span *ngIf="drug">
+            {{allDrugs[drug]}} ({{drug}})<span *ngIf="!isLast">, </span>
+        </span>
+        <span *ngIf="!drug">
+            No drugs to give
+        </span>
+    </span>
+</div>
