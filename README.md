@@ -10,11 +10,16 @@ All instructions are in the hospital.pdf
 ## Technical Information
 In the *​hospital-lib*​ folder, execute these command lines :
 ```
+yarn install
 yarn build:prod
 yarn link
 ```
 
-In the ​package.json of the folder *hospital-fe*, add in the dependencies "hospital-lib": "1.0.0"​, and then execute the command:
+In the *​hospital-fe*​ folder, execute this command line :
+```
+yarn install
+```
+Then, in the ​package.json of the folder *hospital-fe*, add in the dependencies `"hospital-lib": "1.0.0"`​, and then execute the command:
 ```yarn link hospital-lib```
 
 Now, in your source files, you can use the ​hospital-lib​ using:
